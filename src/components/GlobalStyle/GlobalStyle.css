@@ -1,0 +1,44 @@
+*
+{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+html
+{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Futura', sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: 400;
+  font-style: Light;
+  src: local('Futura Light'), url('../../assets/fonts/FUTURA45LIGHT.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: 500;
+  font-style: normal;
+  src: local('Futura Regular'), url('../../assets/fonts/FUTURA55REGULAR.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: 600;
+  font-style: medium;
+  src: local('Futura Medium'), url('../../assets/fonts/FUTURA65MEDIUM.TTF') format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura';
+  font-weight: 700;
+  font-style: Bold;
+  src: local('Futura Bold'), url('../../assets/fonts/FUTURA75BOLD.TTF') format('truetype');
+}
