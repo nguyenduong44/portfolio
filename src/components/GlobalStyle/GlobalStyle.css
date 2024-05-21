@@ -42,3 +42,27 @@ html
   font-style: Bold;
   src: local('Futura Bold'), url('../../assets/fonts/FUTURA75BOLD.TTF') format('truetype');
 }
+
+.flair {
+  position: fixed;
+  top: -15px;
+  left: -15px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid black;
+  background-color: #000;
+  border-radius: 100%;
+  z-index: 100;
+  pointer-events: none;
+  transition: background-color 0.3s ease, width 0.8s ease, height 0.8s ease;
+}
+
+.flair.active {
+  background: rgba(205, 211, 221, 0.8);
+  mix-blend-mode: difference;
+  border: none;
+  width: 90px;
+  height: 90px;
+  top: -45px;
+  left: -45px;
+}

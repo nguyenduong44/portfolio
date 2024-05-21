@@ -1,5 +1,4 @@
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-
 import GlobalStyle from './components/GlobalStyle';
 import Homepage from './pages/Homepage';
 import Contact from './pages/Contact';

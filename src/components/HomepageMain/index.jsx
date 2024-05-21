@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef } from 'react';
+import { useEffect, useLayoutEffect, useRef } from 'react';
 import clsx from 'clsx';
 import style from './HomepageMain.module.scss';
 import { Link } from 'react-router-dom';
@@ -6,7 +6,7 @@ import {gsap} from 'gsap';
 
 function HomepageMain() {
   const containerRef = useRef(null);
-  
+
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const t1 = gsap.timeline();
@@ -38,11 +38,10 @@ function HomepageMain() {
         opacity: 0,
         y: "+=30",
         duration: 0.5,
-      })
+      });
     }, containerRef);
-    
     return () => ctx.revert();
-  },[])
+  },[]);
 
   return (
     <div className={clsx(style.container, style.noise)} ref={containerRef}>
@@ -73,6 +72,7 @@ function HomepageMain() {
           <Link to={'/the-contact'} class={style.contactButton}>contact</Link>
         </div>
       </div>
+      
     </div>
   );
 }
