@@ -1,7 +1,13 @@
+import ContactComponent from '../../components/ContactComponent';
+import Footer from '../../components/Footer';
+import Header from '../../components/Header';
+
 function Contact() {
   return (
     <div>
-      Contact
+      <Header/>
+      <ContactComponent/>
+      <Footer/>
     </div>
   );
 }

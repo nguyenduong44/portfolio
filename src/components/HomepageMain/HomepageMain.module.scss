@@ -2,7 +2,33 @@ $authorNameSize: 10rem;
 $pronounsSize: 4rem;
 $introduceSize: 2.6rem;
 $informationColor: hsl(240,3.41%,34.51%);
-$primaryButtonColor: hsla( 249.74,88.84%,57.84% ,1);
+$primaryButtonColor: rgb(57 54 50);
+
+//Responsive
+$mobile-width: 739px; 
+$tablet-width: 740px; 
+$desktop-width: 1024px;
+$authorNameBreakPoint: 1119px;
+
+@mixin mobile { @media (max-width: #{$mobile-width}){
+    @content;
+  }
+}
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+    @content;
+  }
+}
+
+@mixin desktop { @media (min-width: #{$desktop-width}){
+    @content;
+  }
+}
+
+@mixin authorBreakPoint { @media (max-width: #{$authorNameBreakPoint}){
+  @content;
+}
+}
 
 @mixin button($bg-color, $color, $hoverColor, $textHover, $border, $padding: 2.5rem 8rem, $border-radius: 5px) {
   display: inline-block;
@@ -55,19 +81,31 @@ $primaryButtonColor: hsla( 249.74,88.84%,57.84% ,1);
   .mainContent{
     width: 100%;
     padding-left: 10rem;
+    @include tablet{
+      padding-left: 10%;
+    }
+    @include mobile{
+      padding: 0 1.6rem;
+      height: 100vh;
+    }
     .authorName{
       font-size: clamp(3rem, 10vw + 1rem, $authorNameSize);
-      line-height: clamp(9rem, 10vw + 1rem, $authorNameSize);
+      line-height: clamp(3rem, 10vw + 1rem, $authorNameSize);
       font-weight: 700;
       padding: 4rem 2rem;
       display: inline-block;
       color: #242424;
+      @include authorBreakPoint{
+        font-size: clamp(3rem, 7vw + 1rem, 9rem);
+        line-height: clamp(3rem, 7vw + 1rem, 9.5rem);
+      }
     }
     .pronouns{
       font-size: clamp(2.6rem, 5vw + 1rem, $pronounsSize);
       line-height: clamp(2.6rem, 5vw + 1rem, $pronounsSize);
       font-weight: 500;
       color: $informationColor;
+      display: inline-block;
     }
     ol{
       font-size: clamp(1.8rem, 2vw + 1rem, $introduceSize);
@@ -76,6 +114,11 @@ $primaryButtonColor: hsla( 249.74,88.84%,57.84% ,1);
       word-wrap: break-word;
       width: 45vw;
       font-weight: 500;
+      @include mobile{
+        width: 100%;
+        margin-left: 1.8rem;
+        padding-right: 1.8rem;
+      }
       li{
         margin-bottom: 2rem;
         .introduce{
@@ -91,11 +134,14 @@ $primaryButtonColor: hsla( 249.74,88.84%,57.84% ,1);
           .underline{
             text-decoration: none;
             position: relative;
+            &:visited{
+              color: rgb(57 54 50);
+            }
             &::after {
               content: "";
               position: absolute;
               width: 100%;
-              border-top: solid 3px hsla(249.74, 88.84%, 57.84%, 1);
+              border-top: solid 3px rgb(57 54 50);
               top: 100%;
               left: 0;
               border-radius: 50%;
@@ -106,10 +152,16 @@ $primaryButtonColor: hsla( 249.74,88.84%,57.84% ,1);
       }
     }
     .linkPath{
+      margin-top: 6rem;
       display: flex;
       gap: 2rem;
+      @include mobile{
+        flex-direction: column;
+        margin-top: 4rem;
+        width: 100%;
+      }
       .workButton{
-        @include button($primaryButtonColor, #fff, hsla( 249.74,88.84%,57.84% ,0.8), #fff, none);
+        @include button($primaryButtonColor, #fff, rgba(58, 53, 47, 0.7), #fff, none);
       }
       .contactButton{
         @include button(#fff, #000, #000, #fff, 2px solid #000);

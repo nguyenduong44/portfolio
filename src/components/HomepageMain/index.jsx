@@ -50,6 +50,7 @@ function HomepageMain() {
       </div>
       <div className={clsx(style.mainContent)}>
         <h1 id='author-text' className={style.authorName}>TRAN HOANG PHUC</h1>
+        <br/>
         <h1 id='pronouns-text' className={style.pronouns}>🔊\pʌk\</h1>
         <ol id='introduce-text'>
           <li>

@@ -1,12 +1,38 @@
 $footerLogoSize: 3.4rem;
 $footerPrivacySize: 1.8rem;
 
+//responsive
+$mobile-width: 739px; 
+$tablet-width: 740px; 
+$desktop-width: 1024px;
+
+@mixin mobile { @media (max-width: #{$mobile-width}){
+    @content;
+  }
+}
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+    @content;
+  }
+}
+
+@mixin desktop { @media (min-width: #{$desktop-width}){
+    @content;
+  }
+}
+
 .footerContainer{
   width: 100%;
   padding: 4rem 10rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mobile{
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem 5rem;
+    gap: 2rem;
+  }
   .footerLogo{
     font-size: clamp(1.8rem, 2vw + 1rem, $footerLogoSize);
     line-height: clamp(1.8rem, 2vw + 1rem, $footerLogoSize);
@@ -15,6 +41,9 @@ $footerPrivacySize: 1.8rem;
     font-size: clamp(1.2rem, 2vw + 1rem, $footerPrivacySize);
     line-height: clamp(1.2rem, 2vw + 1rem, $footerPrivacySize);
     font-weight: 500;
+    @include mobile{
+     text-align: center;
+    }
   }
   .footerSocials{
     display: flex;

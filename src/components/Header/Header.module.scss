@@ -1,0 +1,49 @@
+$headerLogoSize: 3.4rem;
+$itemSize: 2.2rem;
+
+.headerContainer{
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 10rem;
+  .logoHeader{
+    font-size: clamp(1.8rem, 2vw + 1rem, $headerLogoSize);
+    line-height: clamp(1.8rem, 2vw + 1rem, $headerLogoSize);
+    font-weight: 700;
+    text-decoration: none;
+      &:visited{
+        color: rgb(18, 17, 15);
+      }
+  }
+  .listContainer{
+    display: flex;
+    gap: 2rem;
+    font-size: clamp(1.6rem, 2vw + 1rem, $itemSize);
+    line-height: clamp(1.6rem, 2vw + 1rem, $itemSize);
+    font-weight: 500;
+    .workItemContainer, .contactItemContainer {
+      text-decoration: none;
+      position: relative; /* Ensure this is relative for pseudo-element positioning */
+      &:visited {
+        color: rgb(18, 17, 15);
+      }
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+  .active {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      border-top: solid 5px rgb(57, 54, 50);
+      top: 110%;
+      left: 0;
+      border-radius: 30%;
+      height: 15px;
+    }
+  }
+}
