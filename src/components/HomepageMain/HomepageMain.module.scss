@@ -1,4 +1,4 @@
-$authorNameSize: 20rem;
+$authorNameSize: 10rem;
 $pronounsSize: 4rem;
 $introduceSize: 2.6rem;
 $informationColor: hsl(240,3.41%,34.51%);
@@ -34,11 +34,30 @@ $primaryButtonColor: hsla( 249.74,88.84%,57.84% ,1);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  position: relative;
+  .introBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #242424;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: #fff;
+      font-size: clamp(3rem, 10vw + 1rem, $authorNameSize);
+      line-height: clamp(9rem, 10vw + 1rem, $authorNameSize);
+    }
+  }
   .mainContent{
     width: 100%;
     padding-left: 10rem;
     .authorName{
-      font-size: clamp(9rem, 10vw + 1rem, $authorNameSize);
+      font-size: clamp(3rem, 10vw + 1rem, $authorNameSize);
       line-height: clamp(9rem, 10vw + 1rem, $authorNameSize);
       font-weight: 700;
       padding: 4rem 2rem;
@@ -68,6 +87,20 @@ $primaryButtonColor: hsla( 249.74,88.84%,57.84% ,1);
           font-size: clamp(1.8rem, 2vw + 1rem, $introduceSize);
           line-height: clamp(1.8rem, 2vw + 1rem, $introduceSize + 2rem);
           color: $informationColor;
+          .underline{
+            text-decoration: none;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              border-top: solid 3px hsla(249.74, 88.84%, 57.84%, 1);
+              top: 100%;
+              left: 0;
+              border-radius: 50%;
+              height: 20px;
+            }
+          }
         }
       }
     }

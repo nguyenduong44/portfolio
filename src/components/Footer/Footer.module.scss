@@ -1,0 +1,24 @@
+$footerLogoSize: 3.4rem;
+$footerPrivacySize: 1.8rem;
+
+.footerContainer{
+  width: 100%;
+  padding: 4rem 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .footerLogo{
+    font-size: clamp(1.8rem, 2vw + 1rem, $footerLogoSize);
+    line-height: clamp(1.8rem, 2vw + 1rem, $footerLogoSize);
+  }
+  .footerPrivacy{
+    font-size: clamp(1.2rem, 2vw + 1rem, $footerPrivacySize);
+    line-height: clamp(1.2rem, 2vw + 1rem, $footerPrivacySize);
+    font-weight: 500;
+  }
+  .footerSocials{
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+  }
+}
