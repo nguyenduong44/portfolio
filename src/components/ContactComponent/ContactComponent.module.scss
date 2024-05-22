@@ -1,4 +1,180 @@
+$contactTitleSize: 3.5rem;
+$mainColor: rgb(57, 54, 50);
+$contactRightH1Size: 2.8rem;
+$contactRightSmallSize: 1.8rem;
+$inputSize: 1.9rem;
+
+//Responsive
+$mobile-width: 739px; 
+$tablet-width: 740px; 
+$desktop-width: 1024px;
+// $authorNameBreakPoint: 1119px;
+
+@mixin mobile { @media (max-width: #{$mobile-width}){
+    @content;
+  }
+}
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+    @content;
+  }
+}
+
+@mixin desktop { @media (min-width: #{$desktop-width}){
+    @content;
+  }
+}
+
+// @mixin authorBreakPoint { @media (max-width: #{$authorNameBreakPoint}){
+//   @content;
+// }
+// }
+
 .contactContainer{
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 4rem 10rem;
+  @include tablet{
+    padding: 2rem 4rem;
+    justify-content: space-between;
+  }
+  @include mobile{
+    padding: 2rem 2rem;
+    width: 100vw;
+    flex-direction: column;
+    height: auto;
+  }
+  .contactLeft{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    @include mobile{
+      width: 100%;
+      margin-bottom: 6rem;
+      align-items: center;
+    }
+    .contactTitle{
+      font-weight: 700;
+      font-size: clamp(1.8rem, 2vw + 1rem, $contactTitleSize);
+      line-height: clamp(1.8rem, 2vw + 1rem, $contactTitleSize);
+      position: relative;
+      margin-bottom: 2rem;
+      // &::after {
+      //   content: "";
+      //   position: absolute;
+      //   width: 47%;
+      //   border-top: solid 5px $mainColor;
+      //   top: 100%;
+      //   left: 0;
+      //   border-radius: 100%;
+      //   height: 20px;
+      // }
+    }
+    label{
+      padding: 0 2rem;
+      margin-bottom: -1rem;
+      font-size: 2rem;
+      @include mobile{
+        align-self: flex-start;
+      }
+    }
+    .contactInput{
+      width: 100%;
+      height: 5.5rem;
+      border: 1px solid $mainColor;
+      border-radius: 2rem;
+      padding: 2rem 2rem;
+      margin-bottom: 1.5rem;
+      font-size: clamp(1.4rem, 2vw + 1rem, $inputSize);
+      line-height: clamp(1.4rem, 2vw + 1rem, $inputSize);
+      &::placeholder{
+        color: rgb(164, 157, 147);
+        font-size: clamp(1.4rem, 2vw + 1rem, $inputSize);
+        line-height: clamp(1.4rem, 2vw + 1rem, $inputSize);
+      }
+      &.textArea{
+        height: 9rem;
+        resize: none;
+      }
+      &:focus{
+        border: 3px solid $mainColor;
+      }
+    }
+    .submitButton{
+      cursor: pointer;
+      align-self: self-end;
+      padding: 2rem 4rem;
+      border: none;
+      border-radius: 2rem;
+      background-color: $mainColor;
+      color: #fff;
+      font-size: 1.8rem;
+      font-weight: 400;
+      transition: opacity 0.5s ease;
+      &:hover{
+        opacity: 0.7;
+      }
+    }
+  }
+  .contactRight{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    @include tablet{
+      padding-left: 10rem;
+      text-align: center;
+    }
+    @include mobile{
+      width: 100%;
+    }
+    .contactMail{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+      margin-bottom: 4rem;
+      // @include tablet{
+      //   text-align: center;
+      // }
+      h1{
+        font-size: clamp(1.6rem, 2vw + 1rem, $contactRightH1Size);
+        line-height: clamp(1.6rem, 2vw + 1rem, $contactRightH1Size);
+        font-weight: 600;
+      }
+      p{
+        font-size: clamp(1.6rem, 2vw + 1rem, $contactRightSmallSize);
+        line-height: clamp(1.6rem, 2vw + 1rem, $contactRightSmallSize);
+        font-weight: 400;
+      }
+    }
+    .contactSocials{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.6rem;
+      h1{
+        font-size: clamp(1.6rem, 2vw + 1rem, $contactRightH1Size);
+        line-height: clamp(1.6rem, 2vw + 1rem, $contactRightH1Size);
+        font-weight: 600;
+      }
+      a{
+        color: #000;
+        text-decoration: none;
+        font-size: clamp(1.6rem, 2vw + 1rem, $contactRightSmallSize);
+        line-height: clamp(1.6rem, 2vw + 1rem, $contactRightSmallSize);
+        font-weight: 400;
+        &:visited
+        {
+          color: $mainColor;
+        }
+      }
+    }
+  }
 }
