@@ -1,14 +1,133 @@
-
+$mainTextWhite: #fff;
+$headerH1Size: 5rem;
+$headerPSize: 2rem;
+$thumbnailTextSize: 3.5rem; 
 
 .workContainer{
   background-color: #000;
+  color: $mainTextWhite;
   width: 100vw;
-  height: 90vh;
+  padding: 4rem 10rem;
   .workHeader{
-
-
+    width: 50%;
+    h1{
+      font-weight: 500;
+      font-size: clamp(3rem, 5vw + 1rem, $headerH1Size);
+      line-height: clamp(3rem, 5vw + 1rem, $headerH1Size);
+      margin-bottom: 3rem;
+    }
+    p{
+      font-weight: 400;
+      font-size: clamp(1.6rem, 5vw + 1rem, $headerPSize);
+      line-height: clamp(1.6rem, 5vw + 1rem, $headerPSize);
+    }
+  }
+  .videoLoop{
+    width: 100%;
+    height: 50vh;
+    margin-top: 6rem;
+    border: 0.3rem solid rgba($color: #ffffff, $alpha: 1);
+    cursor: pointer;
+    // border-radius: 1rem;
+    position: relative;
+    h1{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: clamp(3rem, 5vw + 1rem, $headerH1Size);
+      line-height: clamp(3rem, 5vw + 1rem, $headerH1Size);
+      z-index: 10;
+    }
+    .overlay{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 9;
+      background-color: rgba($color: #000000, $alpha: 0.8);
+      transition: all 0.6s ease;
+      &:hover{
+        background-color: rgba($color: #000000, $alpha: 0.3);
+      }
+    }
+    video{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   .workContent{
+    margin-top: 10rem;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 11rem 5rem;
+    margin-bottom: 10rem;
+    .imgContainer {
+      cursor: pointer;
+      transition: opacity 0.7s ease;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      h1{
+        margin-top: 1.5rem;
+        font-size: clamp(2rem, 5vw + 1rem, $thumbnailTextSize);
+        line-height: clamp(2rem, 5vw + 1rem, $thumbnailTextSize);
+        letter-spacing: 0.6rem;
+        font-weight: 600;
+      }
+      &:hover{
+        opacity: 0.3;
+      }
+    }
+  }
 
+  .iframeOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .iframeContainer {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+  }
+
+  .trailerOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .trailerContainer {
+    position: relative;
+    width: 80vw;
+    height: 80vh;
+  }
+
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
   }
 }

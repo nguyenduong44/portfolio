@@ -12,7 +12,7 @@ function GlobalStyle({children}) {
       const element = e.target;
 
       const isTargetLinkOrBtn = element?.closest('a') || element?.closest('button') || element?.closest('h1')
-      || element?.closest('ol') || element?.closest('Link') || element?.closest('strong') || element?.closest('p') || element?.closest('a') || element?.closest('form');
+      || element?.closest('ol') || element?.closest('Link') || element?.closest('strong') || element?.closest('p') || element?.closest('a') || element?.closest('form') || element?.closest('video') || element?.closest('iframe') || element?.closest('img');
 
       if (isTargetLinkOrBtn) {
         cursor.classList.add('active');
@@ -29,6 +29,7 @@ function GlobalStyle({children}) {
       window.removeEventListener("mousemove", moveCursor);
     };
   }, []);
+
   return (
     <>
       <div id='flair' className='flair'></div>
