@@ -3,13 +3,49 @@ $headerH1Size: 5rem;
 $headerPSize: 2rem;
 $thumbnailTextSize: 3.5rem; 
 
+
+//responsive
+$mobile-width: 739px; 
+$tablet-width: 740px; 
+$desktop-width: 1024px;
+$itemsTextBreakPoint: 800px;
+
+@mixin mobile { @media (max-width: #{$mobile-width}){
+    @content;
+  }
+}
+
+@mixin tablet { @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+    @content;
+  }
+}
+
+@mixin desktop { @media (min-width: #{$desktop-width}){
+    @content;
+  }
+}
+
+@mixin itemsTextBreakPoint { @media (max-width: #{$itemsTextBreakPoint}){
+    @content;
+  }
+}
+
 .workContainer{
   background-color: #000;
   color: $mainTextWhite;
   width: 100vw;
   padding: 4rem 10rem;
+  @include mobile{
+    padding: 4rem 3rem;
+  }
   .workHeader{
     width: 50%;
+    @include tablet{
+      width: 100%;
+    }
+    @include mobile{
+      width: 100%;
+    }
     h1{
       font-weight: 500;
       font-size: clamp(3rem, 5vw + 1rem, $headerH1Size);
@@ -30,6 +66,12 @@ $thumbnailTextSize: 3.5rem;
     cursor: pointer;
     // border-radius: 1rem;
     position: relative;
+    @include tablet{
+      height: 40vh;
+    }
+    @include mobile{
+      height: 35vh;
+    }
     h1{
       position: absolute;
       top: 50%;
@@ -38,6 +80,14 @@ $thumbnailTextSize: 3.5rem;
       font-size: clamp(3rem, 5vw + 1rem, $headerH1Size);
       line-height: clamp(3rem, 5vw + 1rem, $headerH1Size);
       z-index: 10;
+      @include mobile{
+        font-size: clamp(1.8rem, 5vw + 1rem, 3rem);
+        line-height: clamp(1.8rem, 5vw + 1rem, 3rem);
+        text-align: center;
+      }
+      @include tablet{
+        text-align: center;
+      }
     }
     .overlay{
       position: absolute;
@@ -66,6 +116,9 @@ $thumbnailTextSize: 3.5rem;
     grid-template-columns: repeat(2, 1fr);
     gap: 11rem 5rem;
     margin-bottom: 10rem;
+    @include mobile{
+      grid-template-columns: repeat(1, 1fr);
+    }
     .imgContainer {
       cursor: pointer;
       transition: opacity 0.7s ease;
@@ -80,6 +133,9 @@ $thumbnailTextSize: 3.5rem;
         line-height: clamp(2rem, 5vw + 1rem, $thumbnailTextSize);
         letter-spacing: 0.6rem;
         font-weight: 600;
+        @include itemsTextBreakPoint{
+          font-size: clamp(1.8rem, 5vw + 1rem, 3rem);
+        }
       }
       &:hover{
         opacity: 0.3;
@@ -104,6 +160,15 @@ $thumbnailTextSize: 3.5rem;
     position: relative;
     width: 80vw;
     height: 80vh;
+    @include tablet{
+      width: 75vw;
+      height: 40vh;
+    }
+
+    @include mobile{
+      width: 75vw;
+      height: 60vh;
+    }
   }
 
   .trailerOverlay {
@@ -123,6 +188,14 @@ $thumbnailTextSize: 3.5rem;
     position: relative;
     width: 80vw;
     height: 80vh;
+    @include tablet{
+      width: 75vw;
+      height: 40vh;
+    }
+    @include mobile{
+      width: 75vw;
+      height: 30vh;
+    }
   }
 
   iframe {
