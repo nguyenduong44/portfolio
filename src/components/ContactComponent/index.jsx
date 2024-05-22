@@ -2,6 +2,8 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import style from './ContactComponent.module.scss';
 import clsx from 'clsx';
+import Toastify from 'toastify-js';
+import "toastify-js/src/toastify.css"
 
 function ContactComponent() {
 
@@ -16,10 +18,26 @@ function ContactComponent() {
       })
       .then(
         () => {
-          alert('SUCCESS!');
+          Toastify({
+            text: "Success sending message to Puck",
+            duration: 3000,
+            destination: "https://github.com/apvarun/toastify-js",
+            newWindow: true,
+            close: true,
+            gravity: "bottom", 
+            position: "left", 
+            stopOnFocus: true,
+            close: false,
+            style: {
+              background: "rgb(149, 248, 0)",
+              fontSize: "2rem",
+              color: "rgb(57, 54, 50)",
+              fontWeight: "600"
+            }
+          }).showToast();
         },
         (error) => {
-          alert('FAILED...', error.text);
+          alert(error.message);
         },
       );
   };

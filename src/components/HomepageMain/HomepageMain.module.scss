@@ -95,6 +95,7 @@ $authorNameBreakPoint: 1119px;
       padding: 4rem 2rem;
       display: inline-block;
       color: #242424;
+      // filter: drop-shadow(1rem 2rem 2.5rem #434242);
       @include authorBreakPoint{
         font-size: clamp(3rem, 7vw + 1rem, 9rem);
         line-height: clamp(3rem, 7vw + 1rem, 9.5rem);
