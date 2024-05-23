@@ -5,6 +5,9 @@ import clsx from 'clsx';
 import Toastify from 'toastify-js';
 import "toastify-js/src/toastify.css"
 
+import RandomTextHover from './RandomTextHover.jsx';
+import FloatingEmail from './FLoatingEmail.jsx';
+
 function ContactComponent() {
 
   const form = useRef();
@@ -52,20 +55,15 @@ function ContactComponent() {
         <input type="email" name="user_email" placeholder='puckthemadness@gmail.com' className={style.contactInput} required/>
         <label>Message for me</label>
         <textarea name="message" placeholder='do me a favor' className={`${style.contactInput} ${style.textArea}`} required/>
-        <input type="submit" value="Send" className={style.submitButton}/>
+        <button id="button-send" type="submit" className={`${style.submitButton} ${style.submitButton1}`}>Send</button>
       </form>
       <div className={style.contactRight}>
         <div className={style.contactMail}>
           <h1>Let’s make something delightful!</h1>
-          <p>phuc.op69@gmail.com</p>
+          <FloatingEmail />
         </div>
         <div className={style.contactSocials}>
-          <h1>Socials</h1>
-          <a href="https://www.facebook.com/hoangphuc.811" target="_blank">Facebook</a>
-          <a href="https://www.instagram.com/puckthemadness" target="_blank">Instagram</a>
-          <a href="https://www.linkedin.com/in/ho%C3%A0ng-ph%C3%BAc-tr%E1%BA%A7n-46970920b/" target="_blank">Linkedin</a>
-          <a href="https://www.behance.net/pucktran/moodboards" target="_blank">Behance</a>
-          <a href="https://dribbble.com/hoangphuc811" target="_blank">Dribbble</a>
+          <RandomTextHover />
         </div>
       </div>
     </div>

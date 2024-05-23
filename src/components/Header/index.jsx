@@ -15,7 +15,9 @@ function Header() {
       >Puck.co</Link>
       <div className={style.listContainer}>
         <Link to={'/the-work'} 
-          className={`${style.workItemContainer} ${location.pathname === '/the-work' ? style.active : ''}`}
+          className={`${style.workItemContainer} ${location.pathname === '/the-work' ? style.active : ''}
+            ${style.rollingText}
+          `}
           style={{
             color: location.pathname === '/the-work' ? '#fff' : '',
           }}
@@ -23,7 +25,9 @@ function Header() {
         </Link>
 
         <Link to={'/the-contact'} 
-          className={`${style.contactItemContainer} ${location.pathname === '/the-contact' ? style.active : ''}`}
+          className={`${style.contactItemContainer} ${location.pathname === '/the-contact' ? style.active : ''}
+            ${style.rollingText}
+          `}
           style={{
             color: location.pathname === '/the-work' ? '#fff' : '',
           }}

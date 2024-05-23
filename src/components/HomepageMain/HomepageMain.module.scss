@@ -95,7 +95,21 @@ $authorNameBreakPoint: 1119px;
       padding: 4rem 2rem;
       display: inline-block;
       color: #242424;
+      position: relative;
       // filter: drop-shadow(1rem 2rem 2.5rem #434242);
+      .hoverImage {
+        position: absolute;
+        top: -10%;
+        left: -5%;
+        width: 40rem;
+        height: auto;
+        z-index: -1;
+        transform-origin: center;
+        pointer-events: none;
+        will-change: transform;
+        border-radius: 2rem;
+        transition: all 0.1s linear; 
+      }
       @include authorBreakPoint{
         font-size: clamp(3rem, 7vw + 1rem, 9rem);
         line-height: clamp(3rem, 7vw + 1rem, 9.5rem);
@@ -120,6 +134,11 @@ $authorNameBreakPoint: 1119px;
         margin-left: 1.8rem;
         padding-right: 1.8rem;
       }
+      @include tablet{
+        width: 100%;
+        margin-left: 1.8rem;
+        padding-right: 10rem;
+      }
       li{
         margin-bottom: 2rem;
         .introduce{
@@ -133,6 +152,7 @@ $authorNameBreakPoint: 1119px;
           line-height: clamp(1.8rem, 2vw + 1rem, $introduceSize + 2rem);
           color: $informationColor;
           .underline{
+            color: rgb(57 54 50);
             text-decoration: none;
             position: relative;
             &:visited{
@@ -147,6 +167,12 @@ $authorNameBreakPoint: 1119px;
               left: 0;
               border-radius: 50%;
               height: 20px;
+            }
+            span{
+              font-size: clamp(1.8rem, 2vw + 1rem, $introduceSize);
+              line-height: 0;
+              transition: 400ms cubic-bezier(0.075, 0.82, 0.165, 1);
+              transform-origin: bottom;
             }
           }
         }
