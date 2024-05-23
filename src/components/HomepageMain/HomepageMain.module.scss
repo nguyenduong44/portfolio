@@ -3,6 +3,7 @@ $pronounsSize: 4rem;
 $introduceSize: 2.6rem;
 $informationColor: hsl(240,3.41%,34.51%);
 $primaryButtonColor: rgb(57 54 50);
+$mainColor: #2F3FA9;
 
 //Responsive
 $mobile-width: 739px; 
@@ -162,7 +163,7 @@ $authorNameBreakPoint: 1119px;
               content: "";
               position: absolute;
               width: 100%;
-              border-top: solid 3px blue;
+              border-top: solid 3px $mainColor;
               top: 100%;
               left: 0;
               border-radius: 50%;

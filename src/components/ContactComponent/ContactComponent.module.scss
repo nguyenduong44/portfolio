@@ -3,6 +3,7 @@ $mainColor: rgb(57, 54, 50);
 $contactRightH1Size: 2.8rem;
 $contactRightSmallSize: 1.8rem;
 $inputSize: 1.9rem;
+$mainColor1: #2F3FA9;
 
 //Responsive
 $mobile-width: 739px; 
@@ -186,79 +187,79 @@ $desktop-width: 1024px;
 
       .fancy:hover > .letter:nth-child(1){
         transform: translate(-50%, 50%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(2){
         transform: translate(10%, -10%) rotate(-9deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(3){
         transform: translate(40%, 20%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(4){
         transform: translate(20%, -10%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(5){
         transform: translate(35%, -60%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(6){
         transform: translate(20%, 20%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(7){
         transform: translate(45%, 10%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(8){
         transform: translate(20%, 80%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(9){
         transform: translate(40%, -40%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(10){
         transform: translate(-10%, 10%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(11){
         transform: translate(33%, -50%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(12){
         transform: translate(-80%, 60%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(13){
         transform: translate(-30%, -30%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(14){
         transform: translate(-80%, 60%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(15){
         transform: translate(-20%, -20%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(16){
         transform: translate(10%, 10%) rotate(8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(17){
         transform: translate(30%, 60%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
       .fancy:hover > .letter:nth-child(18){
         transform: translate(30%, -40%) rotate(8deg);
-        color: rgb(73, 73, 250);    
+        color: $mainColor1;    
       }
       .fancy:hover > .letter:nth-child(19){
         transform: translate(30%, 30%) rotate(-8deg);
-        color: rgb(73, 73, 250);
+        color: $mainColor1;
       }
     }
     .contactSocials{
@@ -277,6 +278,11 @@ $desktop-width: 1024px;
         font-size: clamp(1.6rem, 2vw + 1rem, $contactRightSmallSize);
         line-height: clamp(1.6rem, 2vw + 1rem, $contactRightSmallSize);
         font-weight: 400;
+        transition: transform 0.4s ease;
+        &:hover{
+          transform: scale(1.4);
+          font-weight: 500;
+        }
         &:visited
         {
           color: $mainColor;
