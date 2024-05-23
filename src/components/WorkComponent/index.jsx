@@ -45,8 +45,8 @@ function WorkComponent() {
         <h1>Animation, Design, and Direction.</h1>
         <p>Ravie develops design and marketing solutions for events, marketing, and entertainment that stride at the forefront of visuals and beyond in an effort to improve brand equity on local and global scales. Peep some of our work below!</p>
       </div>
-      <div className={style.videoLoop}>
-        <div className={style.overlay} onClick={handleTrailerClick}></div>
+      <div className={style.videoLoop} onClick={handleTrailerClick}>
+        <div className={style.overlay}></div>
         <h1>CHECK OUT MY WORK</h1>
         <video autoPlay loop muted src={loopVideo}></video>
       </div>
