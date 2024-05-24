@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6ad08629.css",
+    "main.js": "/static/js/main.e9fe2c2b.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/videoLoop.mp4": "/static/media/videoLoop.c32ae8c9b3713deff5fa.mp4",
+    "static/media/FUTURA55REGULAR.TTF": "/static/media/FUTURA55REGULAR.88fc69339cb42ac7496d.TTF",
+    "static/media/pizzahut.jpg": "/static/media/pizzahut.2c0fc98071d6b9dc31b5.jpg",
+    "static/media/FUTURA65MEDIUM.TTF": "/static/media/FUTURA65MEDIUM.764fbf25f7a0be7fa820.TTF",
+    "static/media/FUTURA75BOLD.TTF": "/static/media/FUTURA75BOLD.4d0efa8d9a2d229ee4dc.TTF",
+    "static/media/FUTURA45LIGHT.TTF": "/static/media/FUTURA45LIGHT.3b6d9872972595ac3d89.TTF",
+    "static/media/avatar.jpg": "/static/media/avatar.c3be4149cb346f6ff3a9.jpg",
+    "static/media/stairs.jpg": "/static/media/stairs.be562ca8ec9a196eb88b.jpg",
+    "static/media/saigon.jpg": "/static/media/saigon.a90fa94a44434ed8bcdc.jpg",
+    "static/media/bluebee.jpg": "/static/media/bluebee.cda20814df2ac597f2c5.jpg",
+    "static/media/hbs.jpg": "/static/media/hbs.a5f35c130b09078e002e.jpg",
+    "static/media/balljourney.jpg": "/static/media/balljourney.17a8392f8865c076eb27.jpg",
+    "static/media/beahit.jpg": "/static/media/beahit.ab8fc0458fc6ec401afa.jpg",
+    "static/media/noise.png": "/static/media/noise.bfe763420a1e7eb8622d.png",
+    "index.html": "/index.html",
+    "main.6ad08629.css.map": "/static/css/main.6ad08629.css.map",
+    "main.e9fe2c2b.js.map": "/static/js/main.e9fe2c2b.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ad08629.css",
+    "static/js/main.e9fe2c2b.js"
+  ]
+}
