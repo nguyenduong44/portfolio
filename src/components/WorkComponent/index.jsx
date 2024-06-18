@@ -2,11 +2,10 @@ import style from './WorkComponent.module.scss';
 import loopVideo from '../../assets/videos/videoLoop.mp4';
 import balljourney from '../../assets/img/balljourney.jpg';
 import bluebee from '../../assets/img/bluebee.jpg';
-import stairs from '../../assets/img/stairs.jpg';
-import pizzahut from '../../assets/img/pizzahut.jpg';
-import hbs from '../../assets/img/hbs.jpg';
-import beahit from '../../assets/img/beahit.jpg';
-import saigon from '../../assets/img/saigon.jpg';
+import mondaypush from "../../assets/img/mondaypush.jpg";
+import logoanimation from '../../assets/img/logoanimation.jpg';
+import selflearning from '../../assets/img/selflearning.jpg';
+import socialpost from '../../assets/img/socialpost.jpg';
 import { useState } from 'react';
 
 function WorkComponent() {
@@ -15,13 +14,12 @@ function WorkComponent() {
   const [showTrailer, setShowTrailer] = useState(false);
 
   const iframes = [
-    { id: 1, url: "https://drive.google.com/file/d/13EPKmRx0A7hJ8JnjMRee85ZEOU4NnWTl/preview", thumbnail: balljourney, name: 'Ball Journey' },
-    { id: 2, url: "https://drive.google.com/file/d/1KtmYG1mWNCtPeIFvgVcf0z-x69DJiBdZ/preview", thumbnail: bluebee, name: 'Blue Bee' },
-    { id: 3, url: "https://drive.google.com/file/d/1JnbmPmaRGux_6veJB7eetvISrDpQZAT6/preview", thumbnail: stairs, name: 'Stairs' },
-    { id: 4, url: "https://drive.google.com/file/d/1ntBWHrz2NAXgYr_XkBvC_NZ3VYuH0V11/preview", thumbnail: pizzahut, name: 'PH Pitch' },
-    { id: 5, url: "https://drive.google.com/file/d/1xQ8Kz4LRd8I_FxkuEAbBgFXw_zekb4yo/preview", thumbnail: hbs, name: 'HBS' },
-    { id: 6, url: "https://drive.google.com/file/d/1i44qqzTR8F8CYhWS_Xq7XYyLH4J9GQQp/preview", thumbnail: beahit, name: 'Be A Hit' },
-    { id: 7, url: "https://drive.google.com/file/d/1ODGGcHtETkDB3ATjyVI5mwtPHehrhbeh/preview", thumbnail: saigon, name: 'Happiness Saigon' },
+    { id: 1, url: "https://drive.google.com/file/d/1fB4_lGaP2d8e3FuCX_F8W4CYDDqzf3Ju/preview", thumbnail: mondaypush, name: 'Monday Push' },
+    { id: 2, url: "https://drive.google.com/file/d/1KyBjILTiytNoSKRF5K0ylsOFIJj888qj/preview", thumbnail: logoanimation, name: 'Logo Animation' },
+    { id: 3, url: "https://drive.google.com/file/d/1oySwxis7i1Gmf5BnNph3tt70bLqNN6BS/preview", thumbnail: selflearning, name: 'Self-Learning' },
+    { id: 4, url: "https://drive.google.com/file/d/1mdtj0x5XUsxaMJoUv5pFGOFUWfXvyVIO/preview", thumbnail: socialpost, name: 'Social Post' },
+    { id: 5, url: "https://drive.google.com/file/d/13EPKmRx0A7hJ8JnjMRee85ZEOU4NnWTl/preview", thumbnail: balljourney, name: 'Ball Journey' },
+    { id: 6, url: "https://drive.google.com/file/d/1KtmYG1mWNCtPeIFvgVcf0z-x69DJiBdZ/preview", thumbnail: bluebee, name: 'BlueBee' }
   ];
 
   const handleThumbnailClick = (id) => {
