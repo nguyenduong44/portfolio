@@ -54,7 +54,9 @@ function WorkComponent() {
         {iframes.map(iframe => (
           <div key={iframe.id} onClick={() => handleThumbnailClick(iframe.id)} className={style.imgContainer}>
             <img src={iframe.thumbnail}/>
-            <h1>{iframe.name}</h1>
+            {iframe.name === 'Blend3015' ? (<h1 style={{textAlign: "center"}}>{iframe.name}</h1>) : (
+              <h1>{iframe.name}</h1>
+            )}
           </div>
         ))}
       </div>
@@ -75,7 +77,7 @@ function WorkComponent() {
         <div className={style.trailerOverlay} onClick={handleCloseTrailer}>
           <div className={style.trailerContainer} onClick={(e) => e.stopPropagation()}>
             <iframe 
-              src='https://drive.google.com/file/d/1Fwg4KdOCrW-r57JEcL7y6--01y3VYin1/preview' 
+              src='https://drive.google.com/file/d/1crrtYbyzSaGX6Lv-QU74CIjWRW2Ux5s2/preview' 
               frameborder="0" allowFullScreen="true" webkitallowfullscreen="true" mozallowfullscreen="true">
             </iframe>
           </div>
