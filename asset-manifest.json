@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.202b35ef.css",
-    "main.js": "/portfolio/static/js/main.afa90e20.js",
+    "main.css": "/portfolio/static/css/main.1c6cf96f.css",
+    "main.js": "/portfolio/static/js/main.6bfd8d91.js",
     "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/videoLoop.mp4": "/portfolio/static/media/videoLoop.c32ae8c9b3713deff5fa.mp4",
+    "static/media/videoLoop.mp4": "/portfolio/static/media/videoLoop.4fbdaef9fbfee1bb874a.mp4",
     "static/media/FUTURA55REGULAR.TTF": "/portfolio/static/media/FUTURA55REGULAR.88fc69339cb42ac7496d.TTF",
     "static/media/FUTURA65MEDIUM.TTF": "/portfolio/static/media/FUTURA65MEDIUM.764fbf25f7a0be7fa820.TTF",
     "static/media/FUTURA75BOLD.TTF": "/portfolio/static/media/FUTURA75BOLD.4d0efa8d9a2d229ee4dc.TTF",
@@ -13,16 +13,17 @@
     "static/media/socialpost.jpg": "/portfolio/static/media/socialpost.4c67f6a9e3d1c7607d20.jpg",
     "static/media/selflearning.jpg": "/portfolio/static/media/selflearning.919bb31486fcaca22b38.jpg",
     "static/media/bluebee.jpg": "/portfolio/static/media/bluebee.cda20814df2ac597f2c5.jpg",
+    "static/media/blend.jpg": "/portfolio/static/media/blend.43577178e984c01541eb.jpg",
     "static/media/balljourney.jpg": "/portfolio/static/media/balljourney.17a8392f8865c076eb27.jpg",
     "static/media/logoanimation.jpg": "/portfolio/static/media/logoanimation.bb5aaacda583c9d97fea.jpg",
     "static/media/noise.png": "/portfolio/static/media/noise.bfe763420a1e7eb8622d.png",
     "index.html": "/portfolio/index.html",
-    "main.202b35ef.css.map": "/portfolio/static/css/main.202b35ef.css.map",
-    "main.afa90e20.js.map": "/portfolio/static/js/main.afa90e20.js.map",
+    "main.1c6cf96f.css.map": "/portfolio/static/css/main.1c6cf96f.css.map",
+    "main.6bfd8d91.js.map": "/portfolio/static/js/main.6bfd8d91.js.map",
     "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.202b35ef.css",
-    "static/js/main.afa90e20.js"
+    "static/css/main.1c6cf96f.css",
+    "static/js/main.6bfd8d91.js"
   ]
 }
