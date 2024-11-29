@@ -122,6 +122,10 @@ $authorNameBreakPoint: 1119px;
       font-weight: 500;
       color: $informationColor;
       display: inline-block;
+      cursor: pointer;
+      -webkit-user-select: none; /* Safari */
+      -ms-user-select: none; /* IE 10 and IE 11 */
+      user-select: none; /* Standard syntax */
     }
     ol{
       font-size: clamp(1.8rem, 2vw + 1rem, $introduceSize);
@@ -192,7 +196,7 @@ $authorNameBreakPoint: 1119px;
         @include button($mainColor, #fff, hsla(232, 20%, 43%, 80%), #000, none);
       }
       .contactButton{
-        @include button(#fff, #000, #000, #fff, 2px solid #000);
+        @include button(#fff, #000, #000, #fff, 1px solid #000);
       }
     }
   }

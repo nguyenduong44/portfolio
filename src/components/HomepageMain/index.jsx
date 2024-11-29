@@ -12,6 +12,8 @@ function HomepageMain() {
   const authorTextRef = useRef(null);
   const lastXRef = useRef(0);
   const lastYRef = useRef(0);
+  const pronounsTextRef = useRef(null);
+  const audioRef = useRef(new Audio("https://www.myinstants.com/media/sounds/pop-cat-original-meme_3ObdYkj.mp3"));
 
   const move = (e) => {
     const elRect = containerRef.current.getBoundingClientRect();
@@ -95,6 +97,28 @@ function HomepageMain() {
         });
       }
 
+      //AUDIO
+      const pronounsText = pronounsTextRef.current;
+      if (pronounsText) {
+        pronounsText.addEventListener('click', () => {
+          // Trigger shake animation
+          gsap.fromTo(
+            pronounsText,
+            { scale: '1' },
+            {
+              scale: '1.2',
+              yoyo: true,
+              duration: 0.04,
+              onComplete: () => gsap.to(pronounsText, { scale: 1 }),
+            }
+          );
+
+          // Play the audio
+          audioRef.current.currentTime = 0; // Reset to start
+          audioRef.current.play();
+        });
+      }
+
     }, containerRef);
     return () =>
     {
@@ -112,7 +136,7 @@ function HomepageMain() {
         <img src={avatar} alt="hover img" ref={imageRef} className={style.hoverImage}/>
         </h1>
         <br/>
-        <h1 id='pronouns-text' className={style.pronouns}>🔊\pʌk\</h1>
+        <h1 ref={pronounsTextRef} id='pronouns-text' className={style.pronouns}>🔊\pʌk\</h1>
         <ol id='introduce-text'>
           <li>
             <strong className={style.introduce}>A highly adaptable individual 
@@ -125,7 +149,7 @@ function HomepageMain() {
             </strong>
           </li>
           <li>
-            <span className={style.contact}>Let’s chat! 📨</span>
+            <span className={style.contact} onClick={""}>Let’s chat! 📨</span>
             <span className={style.contact}>
               <FloatingEmail />
             </span>

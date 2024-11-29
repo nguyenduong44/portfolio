@@ -49,9 +49,6 @@ function Footer() {
       <div className={style.footerLogo}>
         <strong>Puck.co</strong>
       </div>
-      <div className={style.footerPrivacy}>
-        <p>2024 Ravie LLC All Rights Reserved</p>
-      </div>
       <div className={style.footerSocials}>
         <a href="https://www.facebook.com/hoangphuc.811" target="_blank" id="button">
           <ImFacebook2 color="#000" size={30}/>

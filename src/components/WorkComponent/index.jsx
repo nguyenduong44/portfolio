@@ -6,6 +6,7 @@ import mondaypush from "../../assets/img/mondaypush.jpg";
 import logoanimation from '../../assets/img/logoanimation.jpg';
 import selflearning from '../../assets/img/selflearning.jpg';
 import socialpost from '../../assets/img/socialpost.jpg';
+import blend from "../../assets/img/blend.jpg";
 import { useState } from 'react';
 
 function WorkComponent() {
@@ -19,7 +20,8 @@ function WorkComponent() {
     { id: 3, url: "https://drive.google.com/file/d/1oySwxis7i1Gmf5BnNph3tt70bLqNN6BS/preview", thumbnail: selflearning, name: 'Self-Learning' },
     { id: 4, url: "https://drive.google.com/file/d/1mdtj0x5XUsxaMJoUv5pFGOFUWfXvyVIO/preview", thumbnail: socialpost, name: 'Social Post' },
     { id: 5, url: "https://drive.google.com/file/d/13EPKmRx0A7hJ8JnjMRee85ZEOU4NnWTl/preview", thumbnail: balljourney, name: 'Ball Journey' },
-    { id: 6, url: "https://drive.google.com/file/d/1KtmYG1mWNCtPeIFvgVcf0z-x69DJiBdZ/preview", thumbnail: bluebee, name: 'BlueBee' }
+    { id: 6, url: "https://drive.google.com/file/d/1KtmYG1mWNCtPeIFvgVcf0z-x69DJiBdZ/preview", thumbnail: bluebee, name: 'BlueBee' },
+    { id: 7, url: "https://drive.google.com/file/d/1ASoFbBlrugEDyKRvpcd9gGKHx_uQJIFC/preview", thumbnail: blend, name: 'Blend3015' }
   ];
 
   const handleThumbnailClick = (id) => {
@@ -41,7 +43,7 @@ function WorkComponent() {
     <div className={style.workContainer}>
       <div className={style.workHeader}>
         <h1>Animation, Design, and Direction.</h1>
-        <p>Ravie develops design and marketing solutions for events, marketing, and entertainment that stride at the forefront of visuals and beyond in an effort to improve brand equity on local and global scales. Peep some of our work below!</p>
+        <p>Puck develops design and marketing solutions for events, marketing, and entertainment that stride at the forefront of visuals and beyond in an effort to improve brand equity on local and global scales. Peep some of our work below!</p>
       </div>
       <div className={style.videoLoop} onClick={handleTrailerClick}>
         <div className={style.overlay}></div>
