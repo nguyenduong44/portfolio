@@ -8,7 +8,7 @@ function App() {
   return (
     <GlobalStyle>
       <div>
-        <Router basename="portfolio">
+        <Router>
           <Routes>
             <Route path='/' element={ <Homepage /> } />
             <Route path='/the-contact' element={ <Contact /> } />
