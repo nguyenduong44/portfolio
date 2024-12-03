@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fc94b900.css",
-    "main.js": "/portfolio/static/js/main.3f9b7f66.js",
-    "static/js/453.1407b060.chunk.js": "/portfolio/static/js/453.1407b060.chunk.js",
-    "static/media/videoLoop.mp4": "/portfolio/static/media/videoLoop.4fbdaef9fbfee1bb874a.mp4",
-    "static/media/FUTURA55REGULAR.TTF": "/portfolio/static/media/FUTURA55REGULAR.88fc69339cb42ac7496d.TTF",
-    "static/media/FUTURA65MEDIUM.TTF": "/portfolio/static/media/FUTURA65MEDIUM.764fbf25f7a0be7fa820.TTF",
-    "static/media/FUTURA75BOLD.TTF": "/portfolio/static/media/FUTURA75BOLD.4d0efa8d9a2d229ee4dc.TTF",
-    "static/media/FUTURA45LIGHT.TTF": "/portfolio/static/media/FUTURA45LIGHT.3b6d9872972595ac3d89.TTF",
-    "static/media/mondaypush.jpg": "/portfolio/static/media/mondaypush.e9ec2779729665b0214f.jpg",
-    "static/media/avatar.jpg": "/portfolio/static/media/avatar.c3be4149cb346f6ff3a9.jpg",
-    "static/media/socialpost.jpg": "/portfolio/static/media/socialpost.4c67f6a9e3d1c7607d20.jpg",
-    "static/media/selflearning.jpg": "/portfolio/static/media/selflearning.919bb31486fcaca22b38.jpg",
-    "static/media/bluebee.jpg": "/portfolio/static/media/bluebee.cda20814df2ac597f2c5.jpg",
-    "static/media/blend.jpg": "/portfolio/static/media/blend.43577178e984c01541eb.jpg",
-    "static/media/balljourney.jpg": "/portfolio/static/media/balljourney.17a8392f8865c076eb27.jpg",
-    "static/media/logoanimation.jpg": "/portfolio/static/media/logoanimation.bb5aaacda583c9d97fea.jpg",
-    "static/media/noise.png": "/portfolio/static/media/noise.bfe763420a1e7eb8622d.png",
-    "index.html": "/portfolio/index.html",
-    "main.fc94b900.css.map": "/portfolio/static/css/main.fc94b900.css.map",
-    "main.3f9b7f66.js.map": "/portfolio/static/js/main.3f9b7f66.js.map",
-    "453.1407b060.chunk.js.map": "/portfolio/static/js/453.1407b060.chunk.js.map"
+    "main.css": "/static/css/main.ff1328e1.css",
+    "main.js": "/static/js/main.44c73262.js",
+    "static/js/453.1407b060.chunk.js": "/static/js/453.1407b060.chunk.js",
+    "static/media/videoLoop.mp4": "/static/media/videoLoop.4fbdaef9fbfee1bb874a.mp4",
+    "static/media/FUTURA55REGULAR.TTF": "/static/media/FUTURA55REGULAR.88fc69339cb42ac7496d.TTF",
+    "static/media/FUTURA65MEDIUM.TTF": "/static/media/FUTURA65MEDIUM.764fbf25f7a0be7fa820.TTF",
+    "static/media/FUTURA75BOLD.TTF": "/static/media/FUTURA75BOLD.4d0efa8d9a2d229ee4dc.TTF",
+    "static/media/FUTURA45LIGHT.TTF": "/static/media/FUTURA45LIGHT.3b6d9872972595ac3d89.TTF",
+    "static/media/mondaypush.jpg": "/static/media/mondaypush.e9ec2779729665b0214f.jpg",
+    "static/media/avatar.jpg": "/static/media/avatar.c3be4149cb346f6ff3a9.jpg",
+    "static/media/socialpost.jpg": "/static/media/socialpost.4c67f6a9e3d1c7607d20.jpg",
+    "static/media/selflearning.jpg": "/static/media/selflearning.919bb31486fcaca22b38.jpg",
+    "static/media/bluebee.jpg": "/static/media/bluebee.cda20814df2ac597f2c5.jpg",
+    "static/media/blend.jpg": "/static/media/blend.43577178e984c01541eb.jpg",
+    "static/media/balljourney.jpg": "/static/media/balljourney.17a8392f8865c076eb27.jpg",
+    "static/media/logoanimation.jpg": "/static/media/logoanimation.bb5aaacda583c9d97fea.jpg",
+    "static/media/noise.png": "/static/media/noise.bfe763420a1e7eb8622d.png",
+    "index.html": "/index.html",
+    "main.ff1328e1.css.map": "/static/css/main.ff1328e1.css.map",
+    "main.44c73262.js.map": "/static/js/main.44c73262.js.map",
+    "453.1407b060.chunk.js.map": "/static/js/453.1407b060.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fc94b900.css",
-    "static/js/main.3f9b7f66.js"
+    "static/css/main.ff1328e1.css",
+    "static/js/main.44c73262.js"
   ]
 }
